@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uYp-uN-1BB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="IGk-21-ee5">
+            <objects>
+                <viewController id="uYp-uN-1BB" customClass="SearchViewController" customModule="DoctorWho" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yEI-IU-rC8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="6XG-f0-2SN">
+                                <rect key="frame" x="16" y="60" width="382" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="soR-8u-KnT">
+                                <rect key="frame" x="0.0" y="152" width="414" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7RG-LM-SGW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="go profile"/>
+                                    <connections>
+                                        <segue destination="xPr-9f-WMB" kind="show" id="Isr-WQ-AZH"/>
+                                    </connections>
+                                </button>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TFM-6g-YXl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="soR-8u-KnT" firstAttribute="top" secondItem="6XG-f0-2SN" secondAttribute="bottom" constant="36" id="2U4-x0-cMg"/>
+                            <constraint firstItem="TFM-6g-YXl" firstAttribute="trailing" secondItem="soR-8u-KnT" secondAttribute="trailing" id="2oh-Xv-aDE"/>
+                            <constraint firstItem="TFM-6g-YXl" firstAttribute="bottom" secondItem="soR-8u-KnT" secondAttribute="bottom" id="8JC-Yb-svT"/>
+                            <constraint firstItem="soR-8u-KnT" firstAttribute="leading" secondItem="TFM-6g-YXl" secondAttribute="leading" id="OpH-4e-m16"/>
+                            <constraint firstItem="TFM-6g-YXl" firstAttribute="trailing" secondItem="6XG-f0-2SN" secondAttribute="trailing" constant="16" id="T1e-ix-ltJ"/>
+                            <constraint firstItem="6XG-f0-2SN" firstAttribute="top" secondItem="TFM-6g-YXl" secondAttribute="top" constant="16" id="epK-nC-7Ed"/>
+                            <constraint firstItem="6XG-f0-2SN" firstAttribute="leading" secondItem="TFM-6g-YXl" secondAttribute="leading" constant="16" id="fLp-tn-YeP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sx5-s2-HEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="117.85714285714285"/>
+        </scene>
+        <!--ProfileStoryboard-->
+        <scene sceneID="Exg-Tp-tqe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileStoryboard" id="xPr-9f-WMB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TjE-Of-Kvl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Rw-B1-zpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
