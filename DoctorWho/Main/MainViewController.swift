@@ -7,14 +7,15 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     var categories: [category] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         categories = getCategoryData()?.category ?? []
+
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
