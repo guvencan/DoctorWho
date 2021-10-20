@@ -40,6 +40,32 @@ import UIKit
     }
     
     
+    @IBInspectable var shadowRadius: CGFloat {
+        get { return layer.shadowRadius }
+        set { layer.shadowRadius = newValue }
+    }
+
+    @IBInspectable var shadowOpacity: Float {
+        get { return layer.shadowOpacity }
+        set { layer.shadowOpacity = newValue/10 }
+    }
+
+    @IBInspectable var shadowOffset: CGSize {
+        get { return layer.shadowOffset }
+        set { layer.shadowOffset = newValue }
+    }
+
+    @IBInspectable var shadowColor: UIColor? {
+        get {
+            guard let cgColor = layer.shadowColor else {
+                return nil
+            }
+            return UIColor(cgColor: cgColor)
+        }
+        set { layer.shadowColor = newValue?.cgColor }
+    }
+    
+    
     
 
 }
