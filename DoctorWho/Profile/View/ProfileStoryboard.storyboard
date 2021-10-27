@@ -11,7 +11,7 @@
         <!--Profile View Controller-->
         <scene sceneID="yuy-I3-BV5">
             <objects>
-                <viewController id="0XM-XS-nxE" customClass="ProfileViewController" customModule="DoctorWho" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="0XM-XS-nxE" customClass="ProfileViewController" customModule="DoctorWho" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1hk-s0-uyP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +30,9 @@
                             <constraint firstItem="fQ0-id-auk" firstAttribute="centerX" secondItem="VSi-bv-XxY" secondAttribute="centerX" id="uPw-UQ-PFD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="fQ0-id-auk" id="BhH-Kd-P68"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lvb-Sa-M4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

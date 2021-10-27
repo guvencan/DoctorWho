@@ -15,14 +15,36 @@ class MainViewModel {
     
     
     var categories: [Category] = []
-    var reloadTableView: (()->())?
+    var bindData: (()->())?
+    var bindError: (()->())?
     
     init(){
         getData()
     }
     
     
+    //Firestone example
     func getData(){
+        Firestore.firestore().collection("category").addSnapshotListener { (querySnapshot, error) in
+            guard let documents = querySnapshot?.documents else {
+                self.bindError?()
+                return
+            }
+
+            self.categories = documents.map { (queryDocumentSnapshot) -> Category in
+                let data = queryDocumentSnapshot.data()
+                let name = data["name"] as? String ?? ""
+                let image = data["image"] as? String ?? ""
+                return Category(name: name, image: image)
+            }
+            self.bindData?()
+        }
+    }
+    
+    
+    
+    //Real db example
+    func getFromRealDb(){
         Database.database(url: Constants.DB).reference().child("category")
             .observeSingleEvent(of: .value, with: { snapshot in
                 
@@ -33,7 +55,7 @@ class MainViewModel {
                         print(item)
                     }
                 }
-                self.reloadTableView?()
+                self.bindData?()
             })
     }
     

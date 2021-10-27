@@ -15,7 +15,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.reloadTableView = {
+        viewModel.bindData = {
             DispatchQueue.main.async { self.collectionView.reloadData() }
         }
 

@@ -6,5 +6,7 @@ target 'DoctorWho' do
   use_frameworks!
 
   # Pods for DoctorWho
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore' 
   pod 'Firebase/Database'
 end
