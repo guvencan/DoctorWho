@@ -10,11 +10,14 @@ import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var categories: [category] = []
+    var viewModel = MainViewModel()
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categories = getCategoryData()?.category ?? []
+        viewModel.reloadTableView = {
+            DispatchQueue.main.async { self.collectionView.reloadData() }
+        }
 
     }
     
@@ -28,13 +31,13 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
+        return viewModel.categories.count
     }
 
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! MyCollectionViewCell
-        let item = categories[indexPath.row]
+        let item = viewModel.categories[indexPath.row]
         cell.button.setImage(UIImage(named: item.image), for: .normal)
         cell.label.text = item.name
         return cell;
@@ -43,19 +46,3 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
 
 }
 
-
-
-
-    func getCategoryData() -> categoryData?{
-        if let jsonData = readLocalFile(forName: "category") {
-            do {
-                let data = try JSONDecoder().decode(categoryData.self, from: jsonData)
-                print("Name: ", data.category[0].name)
-                print("===================================")
-                return data
-            } catch {
-                print("decode error")
-            }
-        }
-        return nil
-    }
