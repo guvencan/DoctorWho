@@ -11,6 +11,11 @@ struct Category: Codable {
     let name: String
     let image: String
     
+    init(name: String, image: String){
+        self.name = name
+        self.image = image
+    }
+    
     init?(snapshot: DataSnapshot) {
       guard
         let value = snapshot.value as? [String: AnyObject],
@@ -25,6 +30,3 @@ struct Category: Codable {
     }
 }
 
-struct categoryData: Codable {
-    let category: [Category]
-}

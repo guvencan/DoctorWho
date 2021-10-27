@@ -19,6 +19,9 @@
 		FB2B43772717184200255D70 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B43762717184200255D70 /* ProfileViewController.swift */; };
 		FB2B437A2717185000255D70 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2B43792717185000255D70 /* ProfileStoryboard.storyboard */; };
 		FB2B437E271724D300255D70 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B437D271724D300255D70 /* UIButton.swift */; };
+		FB2ECC0E27294FD400130CB6 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2ECC0D27294FD400130CB6 /* SearchViewModel.swift */; };
+		FB2ECC142729512C00130CB6 /* Doctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2ECC132729512C00130CB6 /* Doctors.swift */; };
+		FB2ECC412729660E00130CB6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2ECC402729660E00130CB6 /* ProfileViewModel.swift */; };
 		FB79BAD92719A8B500E359FE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79BAD82719A8B500E359FE /* Util.swift */; };
 		FB79BADC2719A90200E359FE /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79BADB2719A90200E359FE /* CategoryModel.swift */; };
 		FB79BAE02719AA0800E359FE /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = FB79BADF2719AA0800E359FE /* category.json */; };
@@ -45,6 +48,9 @@
 		FB2B43762717184200255D70 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FB2B43792717185000255D70 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		FB2B437D271724D300255D70 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		FB2ECC0D27294FD400130CB6 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		FB2ECC132729512C00130CB6 /* Doctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctors.swift; sourceTree = "<group>"; };
+		FB2ECC402729660E00130CB6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FB79BAD82719A8B500E359FE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		FB79BADB2719A90200E359FE /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		FB79BADF2719AA0800E359FE /* category.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
@@ -122,9 +128,8 @@
 		FB2B436B2717119600255D70 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FBC043E9272886D90007512C /* Repository */,
-				FBC043D1272878410007512C /* View */,
 				FBC043CE2728783A0007512C /* Model */,
+				FBC043D1272878410007512C /* View */,
 				FBC043CC272878310007512C /* ViewModel */,
 			);
 			path = Main;
@@ -133,8 +138,9 @@
 		FB2B436D2717180800255D70 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				FB2B436E2717181A00255D70 /* SearchViewController.swift */,
-				FB2B43722717182A00255D70 /* SearchStoryboard.storyboard */,
+				FB2ECC12272950D100130CB6 /* Model */,
+				FB2ECC0C27294FC200130CB6 /* View */,
+				FB2ECC1027294FDA00130CB6 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -142,10 +148,52 @@
 		FB2B43752717182E00255D70 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				FB2B43762717184200255D70 /* ProfileViewController.swift */,
-				FB2B43792717185000255D70 /* ProfileStoryboard.storyboard */,
+				FB2ECC3E272965F100130CB6 /* View */,
+				FB2ECC3F272965FB00130CB6 /* ViewModel */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		FB2ECC0C27294FC200130CB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B43722717182A00255D70 /* SearchStoryboard.storyboard */,
+				FB2B436E2717181A00255D70 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB2ECC1027294FDA00130CB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB2ECC0D27294FD400130CB6 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB2ECC12272950D100130CB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB2ECC132729512C00130CB6 /* Doctors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB2ECC3E272965F100130CB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B43792717185000255D70 /* ProfileStoryboard.storyboard */,
+				FB2B43762717184200255D70 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB2ECC3F272965FB00130CB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB2ECC402729660E00130CB6 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FB79BADE2719A9F700E359FE /* Data */ = {
@@ -190,13 +238,6 @@
 				FB79BAE42719ABF900E359FE /* MyCollectionViewCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FBC043E9272886D90007512C /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,11 +364,14 @@
 				FB79BAE52719ABF900E359FE /* MyCollectionViewCell.swift in Sources */,
 				FB2B43772717184200255D70 /* ProfileViewController.swift in Sources */,
 				FB2B436F2717181A00255D70 /* SearchViewController.swift in Sources */,
+				FB2ECC412729660E00130CB6 /* ProfileViewModel.swift in Sources */,
+				FB2ECC0E27294FD400130CB6 /* SearchViewModel.swift in Sources */,
 				FBC043D32728799D0007512C /* MainViewModel.swift in Sources */,
 				FB79BAD92719A8B500E359FE /* Util.swift in Sources */,
 				FB79BADC2719A90200E359FE /* CategoryModel.swift in Sources */,
 				FB2B43592717111000255D70 /* SceneDelegate.swift in Sources */,
 				FB2B437E271724D300255D70 /* UIButton.swift in Sources */,
+				FB2ECC142729512C00130CB6 /* Doctors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
