@@ -10,7 +10,7 @@ import FirebaseFirestore
 
 class ProfileViewModel {
     
-    var doctor: Doctors!
+    var doctor: Profile!
     var bindData: (()->())?
     var bindError: (()->())?
     
@@ -23,16 +23,17 @@ class ProfileViewModel {
             }
 
             
-            let doctors: [Doctors] = documents.map { (queryDocumentSnapshot) -> Doctors in
+            let profiles: [Profile] = documents.map { (queryDocumentSnapshot) -> Profile in
                 let data = queryDocumentSnapshot.data()
                 let id = data["id"] as? String ?? ""
-                let title = data["title"] as? String ?? ""
+                let name = data["name"] as? String ?? ""
                 let subtitle = data["subtitle"] as? String ?? ""
-                return Doctors(id: id,title: title, subtitle: subtitle)
+                let school = data["school"] as? String ?? ""
+                return Profile(id: id, name: name, subtitle: subtitle, school: school)
             }
             
-            if(!doctors.isEmpty){
-                self.doctor = doctors.first
+            if(!profiles.isEmpty){
+                self.doctor = profiles.first
                 self.bindData?()
             }
             

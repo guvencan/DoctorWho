@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController{
         self.title = "Profile"
         viewModel.getDoctor(id: doctorId)
         viewModel.bindData = {
-            DispatchQueue.main.async { self.label.text =  "\(self.viewModel.doctor.title) \(self.viewModel.doctor.subtitle)"}
+            DispatchQueue.main.async { self.label.text =  "\(self.viewModel.doctor.name) \(self.viewModel.doctor.subtitle)"}
         }
         
 

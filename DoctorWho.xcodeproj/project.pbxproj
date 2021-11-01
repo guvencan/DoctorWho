@@ -29,7 +29,21 @@
 		FBC043CA272878200007512C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBC043C9272878200007512C /* GoogleService-Info.plist */; };
 		FBC043D32728799D0007512C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC043D22728799D0007512C /* MainViewModel.swift */; };
 		FBC043D727287AB90007512C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC043D627287AB90007512C /* Constants.swift */; };
+		FBEDE32027304EC200C2114F /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDE30D27304E2E00C2114F /* MainViewModelTest.swift */; };
+		FBEDE362273053DA00C2114F /* SearchViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDE361273053DA00C2114F /* SearchViewModelTest.swift */; };
+		FBEDE3662730541900C2114F /* ProfileViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDE3652730541900C2114F /* ProfileViewModelTest.swift */; };
+		FBEDE36F273054FA00C2114F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDE36E273054FA00C2114F /* Profile.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBEDE31927304EBE00C2114F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB2B434B2717111000255D70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB2B43522717111000255D70;
+			remoteInfo = DoctorWho;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorWho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +72,12 @@
 		FBC043C9272878200007512C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FBC043D22728799D0007512C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FBC043D627287AB90007512C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FBEDE30D27304E2E00C2114F /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
+		FBEDE31427304EBE00C2114F /* DoctorWhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorWhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEDE31827304EBE00C2114F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEDE361273053DA00C2114F /* SearchViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTest.swift; sourceTree = "<group>"; };
+		FBEDE3652730541900C2114F /* ProfileViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTest.swift; sourceTree = "<group>"; };
+		FBEDE36E273054FA00C2114F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +86,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63653F4A54BBAA5811A1A2CF /* Pods_DoctorWho.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBEDE31127304EBE00C2114F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2B43552717111000255D70 /* DoctorWho */,
+				FBEDE31527304EBE00C2114F /* DoctorWhoTests */,
 				FB2B43542717111000255D70 /* Products */,
 				9CFFD72B0F83447B307806D8 /* Pods */,
 				A03799571BD8D71032ED5424 /* Frameworks */,
@@ -103,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2B43532717111000255D70 /* DoctorWho.app */,
+				FBEDE31427304EBE00C2114F /* DoctorWhoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +177,7 @@
 		FB2B43752717182E00255D70 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FBEDE36D273054E600C2114F /* Model */,
 				FB2ECC3E272965F100130CB6 /* View */,
 				FB2ECC3F272965FB00130CB6 /* ViewModel */,
 			);
@@ -240,6 +270,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FBEDE31527304EBE00C2114F /* DoctorWhoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBEDE30D27304E2E00C2114F /* MainViewModelTest.swift */,
+				FBEDE361273053DA00C2114F /* SearchViewModelTest.swift */,
+				FBEDE3652730541900C2114F /* ProfileViewModelTest.swift */,
+				FBEDE31827304EBE00C2114F /* Info.plist */,
+			);
+			path = DoctorWhoTests;
+			sourceTree = "<group>";
+		};
+		FBEDE36D273054E600C2114F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBEDE36E273054FA00C2114F /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +311,24 @@
 			productReference = FB2B43532717111000255D70 /* DoctorWho.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FBEDE31327304EBE00C2114F /* DoctorWhoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBEDE31B27304EBE00C2114F /* Build configuration list for PBXNativeTarget "DoctorWhoTests" */;
+			buildPhases = (
+				FBEDE31027304EBE00C2114F /* Sources */,
+				FBEDE31127304EBE00C2114F /* Frameworks */,
+				FBEDE31227304EBE00C2114F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBEDE31A27304EBE00C2114F /* PBXTargetDependency */,
+			);
+			name = DoctorWhoTests;
+			productName = DoctorWhoTests;
+			productReference = FBEDE31427304EBE00C2114F /* DoctorWhoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +340,10 @@
 				TargetAttributes = {
 					FB2B43522717111000255D70 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					FBEDE31327304EBE00C2114F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FB2B43522717111000255D70;
 					};
 				};
 			};
@@ -290,6 +361,7 @@
 			projectRoot = "";
 			targets = (
 				FB2B43522717111000255D70 /* DoctorWho */,
+				FBEDE31327304EBE00C2114F /* DoctorWhoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +378,13 @@
 				FB2B435E2717111000255D70 /* Main.storyboard in Resources */,
 				FB79BAE02719AA0800E359FE /* category.json in Resources */,
 				FB2B437A2717185000255D70 /* ProfileStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBEDE31227304EBE00C2114F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2B435B2717111000255D70 /* MainViewController.swift in Sources */,
+				FBEDE36F273054FA00C2114F /* Profile.swift in Sources */,
 				FBC043D727287AB90007512C /* Constants.swift in Sources */,
 				FB2B43572717111000255D70 /* AppDelegate.swift in Sources */,
 				FB79BAE52719ABF900E359FE /* MyCollectionViewCell.swift in Sources */,
@@ -375,7 +455,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBEDE31027304EBE00C2114F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEDE362273053DA00C2114F /* SearchViewModelTest.swift in Sources */,
+				FBEDE32027304EC200C2114F /* MainViewModelTest.swift in Sources */,
+				FBEDE3662730541900C2114F /* ProfileViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBEDE31A27304EBE00C2114F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB2B43522717111000255D70 /* DoctorWho */;
+			targetProxy = FBEDE31927304EBE00C2114F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB2B435C2717111000255D70 /* Main.storyboard */ = {
@@ -553,6 +651,92 @@
 			};
 			name = Release;
 		};
+		FBEDE31C27304EBE00C2114F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC66JYX3RW;
+				HEADER_SEARCH_PATHS = (
+					"
+For",
+					anyone,
+					still,
+					having,
+					this,
+					"issue,",
+					doing,
+					this,
+					solved,
+					it,
+					for,
+					me.,
+					Add,
+					this,
+					to,
+					your,
+					test,
+					target,
+					build,
+					"settings.\n\n${SRCROOT}/Pods/Firebase/CoreOnly/Sources",
+				);
+				INFOPLIST_FILE = DoctorWhoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ing.team3.DoctorWhoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorWho.app/DoctorWho";
+			};
+			name = Debug;
+		};
+		FBEDE31D27304EBE00C2114F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC66JYX3RW;
+				HEADER_SEARCH_PATHS = (
+					"
+For",
+					anyone,
+					still,
+					having,
+					this,
+					"issue,",
+					doing,
+					this,
+					solved,
+					it,
+					for,
+					me.,
+					Add,
+					this,
+					to,
+					your,
+					test,
+					target,
+					build,
+					"settings.\n\n${SRCROOT}/Pods/Firebase/CoreOnly/Sources",
+				);
+				INFOPLIST_FILE = DoctorWhoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ing.team3.DoctorWhoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorWho.app/DoctorWho";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +754,15 @@
 			buildConfigurations = (
 				FB2B43682717111200255D70 /* Debug */,
 				FB2B43692717111200255D70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBEDE31B27304EBE00C2114F /* Build configuration list for PBXNativeTarget "DoctorWhoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEDE31C27304EBE00C2114F /* Debug */,
+				FBEDE31D27304EBE00C2114F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
