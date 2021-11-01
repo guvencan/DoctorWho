@@ -11,5 +11,6 @@ import Foundation
 struct Doctors: Codable {
     let id: String
     let title: String
-    let subtitle: String
+    let subtitle: String    
+    let tags: [String]
 }

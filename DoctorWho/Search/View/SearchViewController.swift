@@ -12,10 +12,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var viewModel = SearchViewModel()
+    var query: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Search"
+        searchBar.text = query
         viewModel.bindData = {
             DispatchQueue.main.async { self.tableView.reloadData() }
         }

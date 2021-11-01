@@ -21,9 +21,20 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
 
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item + 1)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
 
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -43,6 +54,17 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell;
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item + 1)
+        let item = viewModel.categories[indexPath.row]
+        let vc = UIStoryboard(name: "SearchStoryboard", bundle: nil).instantiateViewController(identifier: "SearchViewController") as SearchViewController
+        vc.query = item.name
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    
+
+    
 
 }
 

@@ -41,23 +41,5 @@ class MainViewModel {
         }
     }
     
-    
-    
-    //Real db example
-    func getFromRealDb(){
-        Database.database(url: Constants.DB).reference().child("category")
-            .observeSingleEvent(of: .value, with: { snapshot in
-                
-                for child in snapshot.children {
-                    if let snapshot = child as? DataSnapshot,
-                        let item = Category(snapshot: snapshot) {
-                        self.categories.append(item)
-                        print(item)
-                    }
-                }
-                self.bindData?()
-            })
-    }
-    
-    
+
 }

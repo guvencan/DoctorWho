@@ -194,7 +194,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtS-ek-zfw">
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtS-ek-zfw">
                                                             <rect key="frame" x="0.0" y="0.0" width="90" height="106"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
@@ -254,9 +254,9 @@
                                         <rect key="frame" x="20" y="431.66666666666669" width="374" height="34"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h08-jq-1xQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="96" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="34"/>
                                                 <color key="backgroundColor" red="0.97278374430000003" green="0.98394483330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="Sigortam">
+                                                <state key="normal" title="SSK">
                                                     <color key="titleColor" red="0.036709316069999998" green="0.0579835847" blue="0.27823030949999999" alpha="0.44833583049999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -275,7 +275,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-4l-U8I">
-                                                <rect key="frame" x="104" y="0.0" width="85.666666666666686" height="34"/>
+                                                <rect key="frame" x="59.333333333333336" y="0.0" width="99.333333333333314" height="34"/>
                                                 <color key="backgroundColor" red="0.97278374430000003" green="0.98394483330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Otopark">
                                                     <color key="titleColor" red="0.036709316069999998" green="0.0579835847" blue="0.27823030949999999" alpha="0.44833583049999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -296,7 +296,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKh-gv-Gac">
-                                                <rect key="frame" x="197.66666666666666" y="0.0" width="86.999999999999972" height="34"/>
+                                                <rect key="frame" x="166.66666666666666" y="0.0" width="101.33333333333334" height="34"/>
                                                 <color key="backgroundColor" red="0.97278374430000003" green="0.98394483330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="+4 puan">
                                                     <color key="titleColor" red="0.036709316069999998" green="0.0579835847" blue="0.27823030949999999" alpha="0.44833583049999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -317,7 +317,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXK-3F-vBS">
-                                                <rect key="frame" x="292.66666666666669" y="0.0" width="81.333333333333314" height="34"/>
+                                                <rect key="frame" x="276" y="0.0" width="98" height="34"/>
                                                 <color key="backgroundColor" red="0.97278374430000003" green="0.98394483330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Uzman">
                                                     <color key="titleColor" red="0.036709316069999998" green="0.0579835847" blue="0.27823030949999999" alpha="0.44833583049999998" colorSpace="custom" customColorSpace="sRGB"/>

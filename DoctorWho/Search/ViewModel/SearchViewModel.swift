@@ -31,7 +31,8 @@ class SearchViewModel {
                 let id = data["id"] as? String ?? ""
                 let title = data["title"] as? String ?? ""
                 let subtitle = data["subtitle"] as? String ?? ""
-                return Doctors(id: id,title: title, subtitle: subtitle)
+                let tags = data["tags"] as? [String] ?? []
+                return Doctors(id: id,title: title, subtitle: subtitle, tags: tags)
             }
             self.doctors = self.filtered
             self.bindData?()
@@ -41,7 +42,7 @@ class SearchViewModel {
     func filterData(searchText: String){
         
         let filterData = doctors.filter({ (doctor) -> Bool in
-            doctor.title.starts(with: searchText) || doctor.subtitle.starts(with: searchText)
+            doctor.title.starts(with: searchText) || doctor.subtitle.starts(with: searchText) || doctor.tags.contains(searchText)
         })
 
         self.filtered = filterData
