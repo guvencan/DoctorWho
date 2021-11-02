@@ -12,4 +12,7 @@ struct Profile: Codable {
     let name: String
     let subtitle: String
     let school: String
+    let profession: [String]
+    let insurance: [String]
+    let comments: [Comment]
 }

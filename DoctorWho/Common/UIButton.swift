@@ -65,7 +65,4 @@ import UIKit
         set { layer.shadowColor = newValue?.cgColor }
     }
     
-    
-    
-
 }
