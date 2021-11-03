@@ -16,7 +16,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Search"
+        self.title = "Arama"
         searchBar.text = query
         viewModel.bindData = {
             DispatchQueue.main.async { self.tableView.reloadData() }

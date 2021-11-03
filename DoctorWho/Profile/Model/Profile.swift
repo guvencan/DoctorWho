@@ -17,5 +17,18 @@ struct Profile: Codable {
     let school: String
     let profession: [String]
     let insurance: [String]
+    let overall: String
     let comments: [Comment]
+    
+    let fiveStarProgress: Float
+    let fourStarProgress: Float
+    let threeStarProgress: Float
+    let twoStarProgress: Float
+    let oneStarProgress: Float
+    
+    let fiveStarPercentage: String
+    let fourStarPercentage: String
+    let threeStarPercentage: String
+    let twoStarPercentage: String
+    let oneStarPercentage: String
 }

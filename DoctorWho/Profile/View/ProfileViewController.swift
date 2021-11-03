@@ -28,7 +28,6 @@ class ProfileViewController: UIViewController{
     
     @IBOutlet weak var fiveStarProgress: UIProgressView!
     @IBOutlet weak var fiveStarPercentage: UILabel!
-    
     @IBOutlet weak var fourStarPercentage: UILabel!
     @IBOutlet weak var threeStarPercentage: UILabel!
     @IBOutlet weak var twoStarPercentage: UILabel!
@@ -43,7 +42,7 @@ class ProfileViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Profile"
+        self.title = "Profil"
 
         self.avatarView.layer.cornerRadius = 34
         self.button.setTitle("Randevu Al", for: .normal)
@@ -75,8 +74,22 @@ class ProfileViewController: UIViewController{
                 label.text = self.viewModel.doctor.school
                 self.schoolStackView.addArrangedSubview(label) 
                 
-// TODO: PROGRESS EXAMPLE
-                self.fiveStarProgress.progress = 0.1
+
+                self.fiveStarProgress.progress = self.viewModel.doctor.fiveStarProgress
+                self.fourStarProgress.progress = self.viewModel.doctor.fourStarProgress
+                self.threeStarProgress.progress = self.viewModel.doctor.threeStarProgress
+                self.twoStarProgress.progress = self.viewModel.doctor.twoStarProgress
+                self.oneStarProgress.progress = self.viewModel.doctor.oneStarProgress
+                
+                self.fiveStarPercentage.text = self.viewModel.doctor.fiveStarPercentage
+                self.fourStarPercentage.text = self.viewModel.doctor.fourStarPercentage
+                self.threeStarPercentage.text = self.viewModel.doctor.threeStarPercentage
+                self.twoStarPercentage.text = self.viewModel.doctor.twoStarPercentage
+                self.oneStarPercentage.text = self.viewModel.doctor.oneStarPercentage
+                
+                self.overallRating.text = self.viewModel.doctor.overall
+                self.totalRatingCount.text = "\(self.viewModel.doctor.comments.count) puan"
+                self.totalCommentCount.text = "ve \(self.viewModel.doctor.comments.count) yorum"
                 
                 self.contentView.translatesAutoresizingMaskIntoConstraints = false
                 var lastView = self.ratingView
