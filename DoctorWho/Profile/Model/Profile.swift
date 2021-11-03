@@ -10,6 +10,12 @@ import Foundation
 struct Profile: Codable {
     let id: String
     let name: String
+    let photo: String
+    let phone: String
+    let hospital: String
     let subtitle: String
     let school: String
+    let profession: [String]
+    let insurance: [String]
+    let comments: [Comment]
 }

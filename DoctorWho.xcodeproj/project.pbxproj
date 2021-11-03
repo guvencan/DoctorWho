@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2663F5D32731CC1700CFC472 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663F5D22731CC1700CFC472 /* Comment.swift */; };
+		2663F5D62731CC4200CFC472 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663F5D52731CC4200CFC472 /* CommentView.swift */; };
 		63653F4A54BBAA5811A1A2CF /* Pods_DoctorWho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */; };
 		FB2B43572717111000255D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B43562717111000255D70 /* AppDelegate.swift */; };
 		FB2B43592717111000255D70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B43582717111000255D70 /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2663F5D22731CC1700CFC472 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2663F5D52731CC4200CFC472 /* CommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorWho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0D11E518B21C7DF8709CB6 /* Pods-DoctorWho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWho.debug.xcconfig"; path = "Target Support Files/Pods-DoctorWho/Pods-DoctorWho.debug.xcconfig"; sourceTree = "<group>"; };
 		D275958BE42EFE91A8B441CB /* Pods-DoctorWho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWho.release.xcconfig"; path = "Target Support Files/Pods-DoctorWho/Pods-DoctorWho.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2663F5D42731CC4200CFC472 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				2663F5D52731CC4200CFC472 /* CommentView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		9CFFD72B0F83447B307806D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 		FB2ECC3E272965F100130CB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2663F5D42731CC4200CFC472 /* Subviews */,
 				FB2B43792717185000255D70 /* ProfileStoryboard.storyboard */,
 				FB2B43762717184200255D70 /* ProfileViewController.swift */,
 			);
@@ -281,6 +294,7 @@
 		FBEDE36D273054E600C2114F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2663F5D22731CC1700CFC472 /* Comment.swift */,
 				FBEDE36E273054FA00C2114F /* Profile.swift */,
 			);
 			path = Model;
@@ -435,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2B435B2717111000255D70 /* MainViewController.swift in Sources */,
+				2663F5D62731CC4200CFC472 /* CommentView.swift in Sources */,
 				FBEDE36F273054FA00C2114F /* Profile.swift in Sources */,
 				FBC043D727287AB90007512C /* Constants.swift in Sources */,
 				FB2B43572717111000255D70 /* AppDelegate.swift in Sources */,
@@ -444,6 +459,7 @@
 				FB2ECC412729660E00130CB6 /* ProfileViewModel.swift in Sources */,
 				FB2ECC0E27294FD400130CB6 /* SearchViewModel.swift in Sources */,
 				FBC043D32728799D0007512C /* MainViewModel.swift in Sources */,
+				2663F5D32731CC1700CFC472 /* Comment.swift in Sources */,
 				FB79BADC2719A90200E359FE /* CategoryModel.swift in Sources */,
 				FB2B43592717111000255D70 /* SceneDelegate.swift in Sources */,
 				FB2B437E271724D300255D70 /* UIButton.swift in Sources */,
