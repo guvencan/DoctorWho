@@ -46,18 +46,16 @@ class ProfileViewController: UIViewController{
         self.title = "Profile"
 
         self.avatarView.layer.cornerRadius = 34
-        
+        self.button.setTitle("Randevu Al", for: .normal)
 
         viewModel.getDoctor(id: doctorId)
         viewModel.bindData = {
             DispatchQueue.main.async {
                 self.nameLabel.text =  "\(self.viewModel.doctor.name)"
                 
-//TODO: Hospital Name
-                self.hospitalLabel.text = self.viewModel.doctor.school
+                self.hospitalLabel.text = self.viewModel.doctor.hospital
                 
-//TODO: https://medicaldanisman.com/UploadedFiles/637379305876551028.jpg -> doctor.image
-                self.avatarView.kf.setImage(with: URL(string: "https://medicaldanisman.com/UploadedFiles/637379305876551028.jpg"))
+                self.avatarView.kf.setImage(with: URL(string: self.viewModel.doctor.photo))
                 
                 self.viewModel.doctor.profession.forEach { element in
                     let label = UILabel()
@@ -115,8 +113,7 @@ class ProfileViewController: UIViewController{
         let alert = UIAlertController(title: "Randevu Al", message: "Randevu almak için telefonunuzun arama kısmına yönlendirileceksiniz. Devam etmek istiyor musunuz?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Evet", style: .default, handler: { action in
             
-/// TODO: 000 yerine Model.phone
-            if let url = URL(string: "tel://\(000)") {
+            if let url = URL(string: "tel://\(self.viewModel.doctor.phone)") {
                 UIApplication.shared.openURL(url)
             }
         }))

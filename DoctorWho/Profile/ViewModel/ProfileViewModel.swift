@@ -27,6 +27,9 @@ class ProfileViewModel {
                 let data = queryDocumentSnapshot.data()
                 let id = data["id"] as? String ?? ""
                 let name = data["name"] as? String ?? ""
+                let photo = data["photo"] as? String ?? ""
+                let phone = data["phone"] as? String ?? ""
+                let hospital = data["hospital"] as? String ?? ""
                 let subtitle = data["subtitle"] as? String ?? ""
                 let school = data["school"] as? String ?? ""
                 let profession = data["profession"] as? [String] ?? []
@@ -42,7 +45,7 @@ class ProfileViewModel {
                     comments.append(Comment(comment: commentText, userName: commentName, date: commentDate, rating: commentRating))
                 }
                 
-                return Profile(id: id, name: name, subtitle: subtitle, school: school, profession: profession, insurance: insurance, comments: comments)
+                return Profile(id: id, name: name, photo: photo, phone: phone, hospital: hospital, subtitle: subtitle, school: school, profession: profession, insurance: insurance, comments: comments)
             }
             
             if(!profiles.isEmpty){
