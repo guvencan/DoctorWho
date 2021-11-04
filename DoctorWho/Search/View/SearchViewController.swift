@@ -18,6 +18,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.title = "Arama"
         searchBar.text = query
+        viewModel.filterData(searchText: query)
         viewModel.bindData = {
             DispatchQueue.main.async { self.tableView.reloadData() }
         }
