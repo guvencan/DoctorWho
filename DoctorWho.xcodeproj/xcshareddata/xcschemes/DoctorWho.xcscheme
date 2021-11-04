@@ -39,6 +39,16 @@
                ReferencedContainer = "container:DoctorWho.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "267DDD4527343ED90051B909"
+               BuildableName = "DoctorWhoUITests.xctest"
+               BlueprintName = "DoctorWhoUITests"
+               ReferencedContainer = "container:DoctorWho.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

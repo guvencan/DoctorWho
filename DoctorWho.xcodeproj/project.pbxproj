@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		2663F5D32731CC1700CFC472 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663F5D22731CC1700CFC472 /* Comment.swift */; };
 		2663F5D62731CC4200CFC472 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663F5D52731CC4200CFC472 /* CommentView.swift */; };
+		267DDD4927343ED90051B909 /* DoctorWhoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD4827343ED90051B909 /* DoctorWhoUITests.swift */; };
+		267DDD4B27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD4A27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift */; };
 		63653F4A54BBAA5811A1A2CF /* Pods_DoctorWho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */; };
+		94940115FB2437F00CD899D6 /* Pods_DoctorWhoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D77EE1B3C865A8D4F09E6 /* Pods_DoctorWhoTests.framework */; };
 		FB2B43572717111000255D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B43562717111000255D70 /* AppDelegate.swift */; };
 		FB2B43592717111000255D70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B43582717111000255D70 /* SceneDelegate.swift */; };
 		FB2B435B2717111000255D70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B435A2717111000255D70 /* MainViewController.swift */; };
@@ -38,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		267DDD4C27343ED90051B909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB2B434B2717111000255D70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB2B43522717111000255D70;
+			remoteInfo = DoctorWho;
+		};
 		FBEDE31927304EBE00C2114F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FB2B434B2717111000255D70 /* Project object */;
@@ -50,9 +60,15 @@
 /* Begin PBXFileReference section */
 		2663F5D22731CC1700CFC472 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2663F5D52731CC4200CFC472 /* CommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		267DDD4627343ED90051B909 /* DoctorWhoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorWhoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		267DDD4827343ED90051B909 /* DoctorWhoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorWhoUITests.swift; sourceTree = "<group>"; };
+		267DDD4A27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorWhoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D8A7BAFA9503D4218A2FEDF /* Pods-DoctorWhoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWhoTests.release.xcconfig"; path = "Target Support Files/Pods-DoctorWhoTests/Pods-DoctorWhoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorWho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0D11E518B21C7DF8709CB6 /* Pods-DoctorWho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWho.debug.xcconfig"; path = "Target Support Files/Pods-DoctorWho/Pods-DoctorWho.debug.xcconfig"; sourceTree = "<group>"; };
 		D275958BE42EFE91A8B441CB /* Pods-DoctorWho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWho.release.xcconfig"; path = "Target Support Files/Pods-DoctorWho/Pods-DoctorWho.release.xcconfig"; sourceTree = "<group>"; };
+		F9C2275B572DE00D30E0A430 /* Pods-DoctorWhoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWhoTests.debug.xcconfig"; path = "Target Support Files/Pods-DoctorWhoTests/Pods-DoctorWhoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA5D77EE1B3C865A8D4F09E6 /* Pods_DoctorWhoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorWhoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2B43532717111000255D70 /* DoctorWho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorWho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2B43562717111000255D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB2B43582717111000255D70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		267DDD4327343ED90051B909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB2B43502717111000255D70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94940115FB2437F00CD899D6 /* Pods_DoctorWhoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,11 +135,22 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		267DDD4727343ED90051B909 /* DoctorWhoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				267DDD4827343ED90051B909 /* DoctorWhoUITests.swift */,
+				267DDD4A27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift */,
+			);
+			path = DoctorWhoUITests;
+			sourceTree = "<group>";
+		};
 		9CFFD72B0F83447B307806D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				8C0D11E518B21C7DF8709CB6 /* Pods-DoctorWho.debug.xcconfig */,
 				D275958BE42EFE91A8B441CB /* Pods-DoctorWho.release.xcconfig */,
+				F9C2275B572DE00D30E0A430 /* Pods-DoctorWhoTests.debug.xcconfig */,
+				5D8A7BAFA9503D4218A2FEDF /* Pods-DoctorWhoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -124,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */,
+				FA5D77EE1B3C865A8D4F09E6 /* Pods_DoctorWhoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +169,7 @@
 			children = (
 				FB2B43552717111000255D70 /* DoctorWho */,
 				FBEDE31527304EBE00C2114F /* DoctorWhoTests */,
+				267DDD4727343ED90051B909 /* DoctorWhoUITests */,
 				FB2B43542717111000255D70 /* Products */,
 				9CFFD72B0F83447B307806D8 /* Pods */,
 				A03799571BD8D71032ED5424 /* Frameworks */,
@@ -144,6 +181,7 @@
 			children = (
 				FB2B43532717111000255D70 /* DoctorWho.app */,
 				FBEDE31427304EBE00C2114F /* DoctorWhoTests.xctest */,
+				267DDD4627343ED90051B909 /* DoctorWhoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,6 +344,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		267DDD4527343ED90051B909 /* DoctorWhoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267DDD5027343ED90051B909 /* Build configuration list for PBXNativeTarget "DoctorWhoUITests" */;
+			buildPhases = (
+				267DDD4227343ED90051B909 /* Sources */,
+				267DDD4327343ED90051B909 /* Frameworks */,
+				267DDD4427343ED90051B909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				267DDD4D27343ED90051B909 /* PBXTargetDependency */,
+			);
+			name = DoctorWhoUITests;
+			productName = DoctorWhoUITests;
+			productReference = 267DDD4627343ED90051B909 /* DoctorWhoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FB2B43522717111000255D70 /* DoctorWho */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB2B43672717111200255D70 /* Build configuration list for PBXNativeTarget "DoctorWho" */;
@@ -329,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBEDE31B27304EBE00C2114F /* Build configuration list for PBXNativeTarget "DoctorWhoTests" */;
 			buildPhases = (
+				236CE5AB4BAEC74E5C746CD5 /* [CP] Check Pods Manifest.lock */,
 				FBEDE31027304EBE00C2114F /* Sources */,
 				FBEDE31127304EBE00C2114F /* Frameworks */,
 				FBEDE31227304EBE00C2114F /* Resources */,
@@ -349,9 +406,13 @@
 		FB2B434B2717111000255D70 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					267DDD4527343ED90051B909 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FB2B43522717111000255D70;
+					};
 					FB2B43522717111000255D70 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -376,11 +437,19 @@
 			targets = (
 				FB2B43522717111000255D70 /* DoctorWho */,
 				FBEDE31327304EBE00C2114F /* DoctorWhoTests */,
+				267DDD4527343ED90051B909 /* DoctorWhoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		267DDD4427343ED90051B909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB2B43512717111000255D70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +474,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		236CE5AB4BAEC74E5C746CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorWhoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E16E179BB38E55D759E90E8C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +538,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		267DDD4227343ED90051B909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267DDD4B27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift in Sources */,
+				267DDD4927343ED90051B909 /* DoctorWhoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB2B434F2717111000255D70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +584,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		267DDD4D27343ED90051B909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB2B43522717111000255D70 /* DoctorWho */;
+			targetProxy = 267DDD4C27343ED90051B909 /* PBXContainerItemProxy */;
+		};
 		FBEDE31A27304EBE00C2114F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FB2B43522717111000255D70 /* DoctorWho */;
@@ -511,6 +616,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		267DDD4E27343ED90051B909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.senamobile.DoctorWhoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoctorWho;
+			};
+			name = Debug;
+		};
+		267DDD4F27343ED90051B909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.senamobile.DoctorWhoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoctorWho;
+			};
+			name = Release;
+		};
 		FB2B43652717111200255D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,6 +820,7 @@
 		};
 		FBEDE31C27304EBE00C2114F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C2275B572DE00D30E0A430 /* Pods-DoctorWhoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -712,6 +864,7 @@ For",
 		};
 		FBEDE31D27304EBE00C2114F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8A7BAFA9503D4218A2FEDF /* Pods-DoctorWhoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -756,6 +909,15 @@ For",
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		267DDD5027343ED90051B909 /* Build configuration list for PBXNativeTarget "DoctorWhoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267DDD4E27343ED90051B909 /* Debug */,
+				267DDD4F27343ED90051B909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB2B434E2717111000255D70 /* Build configuration list for PBXProject "DoctorWho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -113,3 +113,6 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods
 .DS_Store
+Podfile
+Podfile.lock
+DoctorWho/Main/View/Base.lproj/Main.storyboard
