@@ -1,0 +1,24 @@
+{
+  "category": [
+    {
+      "name": "Diş",
+      "image": "dis"
+    },
+    {
+      "name": "Göz",
+      "image": "goz"
+    },
+    {
+      "name": "Ortopedi",
+      "image": "ortopedi"
+    },
+    {
+      "name": "Estetik",
+      "image": "estetik"
+    },
+    {
+      "name": "Çocuk",
+      "image": "cocuk"
+    }
+  ]
+}
