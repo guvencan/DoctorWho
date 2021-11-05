@@ -13,34 +13,40 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     var viewModel = MainViewModel()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
+    private let baseView = UIView()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
+        baseView.backgroundColor = UIColor(hexString: "63B8A7")
+        view.addSubview(baseView)
+        
+        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageTapped)))
+        imageView.isUserInteractionEnabled = true
+        
         viewModel.bindData = {
             DispatchQueue.main.async { self.collectionView.reloadData() }
         }
         
-        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageTapped)))
-        imageView.isUserInteractionEnabled = true
 
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        baseView.frame = UIApplication.shared.statusBarFrame
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        setNeedsStatusBarAppearanceUpdate()
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        super.viewWillAppear(animated)        
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        .default
-    }
+
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
