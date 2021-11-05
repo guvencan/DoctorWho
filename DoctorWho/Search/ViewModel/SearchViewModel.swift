@@ -13,14 +13,11 @@ class SearchViewModel {
     var filtered: [Doctors] = []
     var bindData: (()->())?
     var bindError: (()->())?
+    var listener: ListenerRegistration?
     
-    init(){
-        getData()
-    }
-    
-    
-    func getData(){
-        Firestore.firestore().collection("search").addSnapshotListener { (querySnapshot, error) in
+
+    func makeSearch(searchText: String){
+        listener = Firestore.firestore().collection("search").addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 self.bindError?()
                 return
@@ -34,23 +31,24 @@ class SearchViewModel {
                 let tags = data["tags"] as? [String] ?? []
                 return Doctors(id: id,title: title, subtitle: subtitle, tags: tags)
             }
+            
             self.doctors = self.filtered
+            if(searchText != ""){
+                self.filterData(query: searchText)
+            }
             self.bindData?()
+
         }
     }
     
-    func filterData(searchText: String){
-        
+    func filterData(query: String){
         let filterData = doctors.filter({ (doctor) -> Bool in
-            doctor.title.starts(with: searchText) || doctor.subtitle.starts(with: searchText) || doctor.tags.contains(searchText)
+            doctor.title.starts(with: query) || doctor.subtitle.starts(with: query) || doctor.tags.contains(query)
         })
-
         self.filtered = filterData
-        self.bindData?()
         
     }
-    
-    
+
 
     
 }

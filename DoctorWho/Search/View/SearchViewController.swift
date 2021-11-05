@@ -18,7 +18,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.title = "Arama"
         searchBar.text = query
-        viewModel.filterData(searchText: query)
+        viewModel.makeSearch(searchText: query)
         viewModel.bindData = {
             DispatchQueue.main.async { self.tableView.reloadData() }
         }
@@ -51,7 +51,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel.filterData(searchText: searchText)
+        viewModel.makeSearch(searchText: searchText)
     }
     
     
