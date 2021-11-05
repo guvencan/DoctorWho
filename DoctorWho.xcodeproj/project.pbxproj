@@ -11,6 +11,10 @@
 		2663F5D62731CC4200CFC472 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663F5D52731CC4200CFC472 /* CommentView.swift */; };
 		267DDD4927343ED90051B909 /* DoctorWhoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD4827343ED90051B909 /* DoctorWhoUITests.swift */; };
 		267DDD4B27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD4A27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift */; };
+		267DDD522734590D0051B909 /* UIButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD512734590D0051B909 /* UIButtonTest.swift */; };
+		267DDD5427345CE10051B909 /* CommentViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD5327345CE10051B909 /* CommentViewTest.swift */; };
+		267DDD5627351FA90051B909 /* SearchViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD5527351FA90051B909 /* SearchViewControllerTest.swift */; };
+		267DDD582735233B0051B909 /* ProfileViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DDD572735233B0051B909 /* ProfileViewControllerTest.swift */; };
 		63653F4A54BBAA5811A1A2CF /* Pods_DoctorWho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */; };
 		94940115FB2437F00CD899D6 /* Pods_DoctorWhoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5D77EE1B3C865A8D4F09E6 /* Pods_DoctorWhoTests.framework */; };
 		FB2B43572717111000255D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B43562717111000255D70 /* AppDelegate.swift */; };
@@ -63,6 +67,10 @@
 		267DDD4627343ED90051B909 /* DoctorWhoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorWhoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		267DDD4827343ED90051B909 /* DoctorWhoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorWhoUITests.swift; sourceTree = "<group>"; };
 		267DDD4A27343ED90051B909 /* DoctorWhoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorWhoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		267DDD512734590D0051B909 /* UIButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTest.swift; sourceTree = "<group>"; };
+		267DDD5327345CE10051B909 /* CommentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewTest.swift; sourceTree = "<group>"; };
+		267DDD5527351FA90051B909 /* SearchViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTest.swift; sourceTree = "<group>"; };
+		267DDD572735233B0051B909 /* ProfileViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTest.swift; sourceTree = "<group>"; };
 		5D8A7BAFA9503D4218A2FEDF /* Pods-DoctorWhoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWhoTests.release.xcconfig"; path = "Target Support Files/Pods-DoctorWhoTests/Pods-DoctorWhoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A751BE2CF42BC155F6D7019 /* Pods_DoctorWho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorWho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0D11E518B21C7DF8709CB6 /* Pods-DoctorWho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorWho.debug.xcconfig"; path = "Target Support Files/Pods-DoctorWho/Pods-DoctorWho.debug.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +336,10 @@
 				FBEDE361273053DA00C2114F /* SearchViewModelTest.swift */,
 				FBEDE3652730541900C2114F /* ProfileViewModelTest.swift */,
 				FBEDE31827304EBE00C2114F /* Info.plist */,
+				267DDD512734590D0051B909 /* UIButtonTest.swift */,
+				267DDD5327345CE10051B909 /* CommentViewTest.swift */,
+				267DDD5527351FA90051B909 /* SearchViewControllerTest.swift */,
+				267DDD572735233B0051B909 /* ProfileViewControllerTest.swift */,
 			);
 			path = DoctorWhoTests;
 			sourceTree = "<group>";
@@ -575,9 +587,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267DDD5627351FA90051B909 /* SearchViewControllerTest.swift in Sources */,
+				267DDD5427345CE10051B909 /* CommentViewTest.swift in Sources */,
 				FBEDE362273053DA00C2114F /* SearchViewModelTest.swift in Sources */,
 				FBEDE32027304EC200C2114F /* MainViewModelTest.swift in Sources */,
 				FBEDE3662730541900C2114F /* ProfileViewModelTest.swift in Sources */,
+				267DDD582735233B0051B909 /* ProfileViewControllerTest.swift in Sources */,
+				267DDD522734590D0051B909 /* UIButtonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
